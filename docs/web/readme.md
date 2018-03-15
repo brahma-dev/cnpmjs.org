@@ -1,6 +1,6 @@
 # cnpmjs.org: Private npm registry and web for Company
 
-So `cnpm` is meaning: **Company npm**.
+So `cnpm` means: **Company npm**.
 
 ## Registry
 
@@ -15,7 +15,7 @@ So `cnpm` is meaning: **Company npm**.
     <tr>
       <td class="count" id="total-packages"></td><td>total packages</td>
       <td class="count" id="total-versions"></td><td>total package versions</td>
-      <td class="count" id="total-deletes"></td><td>total delete packages</td>
+      <td class="count" id="total-deletes"></td><td>total deleted packages</td>
     </tr>
     <tr>
       <td class="count"></td><td> downloads today</td>
@@ -43,12 +43,12 @@ So `cnpm` is meaning: **Company npm**.
   <table class="sync-status">
     <tbody>
       <tr>
-        <td><span id="need-sync"></span> packages need to be sync</td>
+        <td><span id="need-sync"></span> packages need to be synchronized</td>
         <td class="syncing"><span id="left-sync"></span> packages and dependencies waiting for sync</td>
         <td><span id="percent-sync"></span>% progress</td>
       </tr>
       <tr>
-        <td><span id="success-sync"></span> packages and dependencies sync successed</td>
+        <td><span id="success-sync"></span> packages and dependencies sync succeeded</td>
         <td><span id="fail-sync"></span> packages and dependencies sync failed</td>
         <td>last success: <span id="last-success-name"></span></td>
       </tr>
