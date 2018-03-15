@@ -2,8 +2,6 @@
 
 var config = require('../config');
 
-config.database.logging = console.log;
-
 // $ node --harmony models/init_script.js <force> <dialect> <port> <username>
 var force = process.argv[2] === 'true';
 var dialect = process.argv[3];
@@ -23,7 +21,7 @@ var models = require('./');
 
 models.sequelize.sync({
   force: force,
-  logging: console.log,
+  logging: (config.database.logging && console.log),
  })
   .then(function () {
     models.Total.init(function (err) {
